@@ -1,0 +1,141 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+/* .lockIcon {
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  min-width: 75px;
+} */
+
+
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+
+
+.past {
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: lightgray;
+  border-top: white ;
+  border-width: 2px solid white;
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-top: white ;
+  border-width: 2px solid white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-top: white ;
+  border-width: 2px solid white;
+}
+
+/* .appt {
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: lightgray;
+
+  border-top: white ;
+  border-width: 2px solid white;
+} */
+
+.hour {
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 10px;
+
+  min-width: 75px;
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.buttonStyle{
+  border-left: 1px solid white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #36d4fc;
+  color: white;
+  padding-top: 30px;
+  padding-right: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+/* .saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  
+} */
+.buttonStyle:hover {
+  background-color: #36d4fc;
+  color: grey;
+  
+}
+
+.buttonStyle:active {
+  
+} 
+
+/* time containers */
+.container {
+  align-items: center;
+  justify-content: center;
+
+  /* min-width: 450px;
+  max-width: 600px; */
+  
+}
