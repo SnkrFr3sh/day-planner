@@ -1,11 +1,33 @@
+:root {
+  --brightpurple: #e51ca5;
+  --mutegrey: #877e85;
+  --darkpurple: #5e2247;
+  --pink: #e9beca;
+  --greengrey: #b5c4c5;
+  --lavender: #adacbe;
+  --mediumgrey: #494f55;
+  --brown: #6b4e22;
+  --plum: #724f67;
+  --burntorange: #f1a251;
+
+}
+
+
+
+
+
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: var(--mediumgrey);
 }
 
 textarea {
   background: transparent;
+  background-color: var(--mutegrey);
   border: none;
   resize: none;
   color: #000000;
@@ -15,10 +37,10 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: var(--lavender);
+  color: var(--mediumgrey);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid var(--burntorange);
 }
 
 /* .lockIcon {
@@ -42,7 +64,7 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--mediumgrey);
 }
 
 
@@ -52,15 +74,15 @@ textarea {
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  background-color: lightgray;
-  border-top: white ;
-  border-width: 2px solid white;
-  background-color: #d3d3d3;
+  background-color: var(--greengrey);
+  border-top:var(--mediumgrey) ;
+  border-width: 2px solid var(--mediumgrey);
   color: white;
+  text-decoration: line-through;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--mutegrey);
   color: white;
   text-align: left;
   padding-right: 10px;
@@ -71,7 +93,7 @@ textarea {
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--plum);
   color: white;
   text-align: left;
   padding-right: 10px;
@@ -98,21 +120,31 @@ textarea {
   padding-right: 10px;
 
   min-width: 75px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--mediumgrey);
+  color: var(--greengrey);
   border-top: 1px dashed #000000;
 }
 
 .buttonStyle{
-  border-left: 1px solid white;
+  border-left: 1px solid var(--mediumgrey);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #36d4fc;
-  color: white;
+  background-color: var(--darkpurple);
+  color: var(--greengrey);
   padding-top: 30px;
   padding-right: 10px;
   align-items: center;
   text-align: center;
+}
+
+#clearBtn{
+  border: 0px;
+  border-radius: 15px;
+  background-color: var(--dark);
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
 }
 
 /* .saveBtn i:hover {
@@ -121,13 +153,14 @@ textarea {
   
 } */
 .buttonStyle:hover {
-  background-color: #36d4fc;
+  background-color: var(--burntorange);
   color: grey;
   
 }
 
-.buttonStyle:active {
-  
+#clearBtn:hover {
+  background-color:var(--burntorange);
+  color: #36d4fc;
 } 
 
 /* time containers */

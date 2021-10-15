@@ -100,10 +100,15 @@ schedule20.text(stored20);
 schedule21.text(stored21);
 schedule22.text(stored22);
 schedule23.text(stored23);
-
-
-
 }
+
+var clearBtn=$('#clearBtn');
+    
+clearBtn.click(function(){
+window.localStorage.clear();
+location.reload();
+})
+
 
 var presentTime = moment().format('HH');
 console.log(presentTime);
@@ -254,372 +259,374 @@ saveButton23.click(function() {
     localStorage.setItem('hour23',$('.hour23').val());
 })
 
+
+
 if (presentTime == 0){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt7 hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt8 hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt9 hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt10 hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt11 hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt12 hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt7 hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt8 hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt9 hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt10 hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt11 hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt12 hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
 }   
 if (presentTime == 1){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 2){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 3){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 4){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 5){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 6){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 7){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt7 hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt7 hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 8){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt7 hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt8 hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt7 hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt8 hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 9){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt7 hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt8 hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt9 hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt7 hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt8 hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt9 hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 10){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt7 hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt8 hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt9 hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt10 hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt7 hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt8 hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt9 hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt10 hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   if (presentTime == 11){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt7 hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt8 hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt9 hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt10 hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt11 hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt7 hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt8 hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt9 hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt10 hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt11 hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
 if (presentTime == 12){
-    present0.setAttribute('class', 'appt0 hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt1 hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt2 hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt3 hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt4 hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt5 hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt6 hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt7 hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt8 hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt9 hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt10 hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt11 hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt12 hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt0 hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt1 hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt2 hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt3 hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt4 hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt5 hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt6 hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt7 hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt8 hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt9 hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt10 hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt11 hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt12 hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 } if (presentTime == 13) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 14) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 15) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 16) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 17) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present17.setAttribute('class', 'appt hour17 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present17.setAttribute('class', 'appt hour17 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 18) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present17.setAttribute('class', 'appt hour17 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present18.setAttribute('class', 'appt hour18 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present17.setAttribute('class', 'appt hour17 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present18.setAttribute('class', 'appt hour18 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 19) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present17.setAttribute('class', 'appt hour17 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present18.setAttribute('class', 'appt hour18 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present19.setAttribute('class', 'appt hour19 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present17.setAttribute('class', 'appt hour17 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present18.setAttribute('class', 'appt hour18 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present19.setAttribute('class', 'appt hour19 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 20) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present17.setAttribute('class', 'appt hour17 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present18.setAttribute('class', 'appt hour18 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present19.setAttribute('class', 'appt hour19 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present20.setAttribute('class', 'appt hour20 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present17.setAttribute('class', 'appt hour17 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present18.setAttribute('class', 'appt hour18 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present19.setAttribute('class', 'appt hour19 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present20.setAttribute('class', 'appt hour20 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 21) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present17.setAttribute('class', 'appt hour17 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present18.setAttribute('class', 'appt hour18 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present19.setAttribute('class', 'appt hour19 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present20.setAttribute('class', 'appt hour20 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present21.setAttribute('class', 'appt hour21 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present17.setAttribute('class', 'appt hour17 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present18.setAttribute('class', 'appt hour18 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present19.setAttribute('class', 'appt hour19 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present20.setAttribute('class', 'appt hour20 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present21.setAttribute('class', 'appt hour21 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 22) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present17.setAttribute('class', 'appt hour17 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present18.setAttribute('class', 'appt hour18 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present19.setAttribute('class', 'appt hour19 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present20.setAttribute('class', 'appt hour20 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present21.setAttribute('class', 'appt hour21 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present22.setAttribute('class', 'appt hour22 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present17.setAttribute('class', 'appt hour17 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present18.setAttribute('class', 'appt hour18 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present19.setAttribute('class', 'appt hour19 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present20.setAttribute('class', 'appt hour20 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present21.setAttribute('class', 'appt hour21 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present22.setAttribute('class', 'appt hour22 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 
 }   
 if (presentTime == 23) {
-    present0.setAttribute('class', 'appt hour0 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present1.setAttribute('class', 'appt hour1 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present2.setAttribute('class', 'appt hour2 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present3.setAttribute('class', 'appt hour3 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present4.setAttribute('class', 'appt hour4 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present5.setAttribute('class', 'appt hour5 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present6.setAttribute('class', 'appt hour6 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present7.setAttribute('class', 'appt hour7 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present8.setAttribute('class', 'appt hour8 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present9.setAttribute('class', 'appt hour9 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present10.setAttribute('class', 'appt hour10 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present11.setAttribute('class', 'appt hour11 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present12.setAttribute('class', 'appt hour12 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present13.setAttribute('class', 'appt hour13 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present14.setAttribute('class', 'appt hour14 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present15.setAttribute('class', 'appt hour15 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present16.setAttribute('class', 'appt hour16 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present17.setAttribute('class', 'appt hour17 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present18.setAttribute('class', 'appt hour18 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present19.setAttribute('class', 'appt hour19 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present20.setAttribute('class', 'appt hour20 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present21.setAttribute('class', 'appt hour21 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present22.setAttribute('class', 'appt hour22 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
-    present23.setAttribute('class', 'appt hour23 col-xs-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
+    present0.setAttribute('class', 'appt hour0 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present1.setAttribute('class', 'appt hour1 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present2.setAttribute('class', 'appt hour2 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present3.setAttribute('class', 'appt hour3 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present4.setAttribute('class', 'appt hour4 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present5.setAttribute('class', 'appt hour5 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present6.setAttribute('class', 'appt hour6 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present7.setAttribute('class', 'appt hour7 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present8.setAttribute('class', 'appt hour8 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present9.setAttribute('class', 'appt hour9 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present10.setAttribute('class', 'appt hour10 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present11.setAttribute('class', 'appt hour11 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present12.setAttribute('class', 'appt hour12 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present13.setAttribute('class', 'appt hour13 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present14.setAttribute('class', 'appt hour14 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present15.setAttribute('class', 'appt hour15 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present16.setAttribute('class', 'appt hour16 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present17.setAttribute('class', 'appt hour17 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present18.setAttribute('class', 'appt hour18 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present19.setAttribute('class', 'appt hour19 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present20.setAttribute('class', 'appt hour20 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present21.setAttribute('class', 'appt hour21 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present22.setAttribute('class', 'appt hour22 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 past');
+    present23.setAttribute('class', 'appt hour23 col-6 col-sm-8 col-md-8 col-lg-10 col-xl-10 present');
 }   
