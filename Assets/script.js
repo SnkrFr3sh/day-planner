@@ -165,98 +165,123 @@ saveButton23 = $('#saveBtn23');
 saveButton0.click(function() {
     saveButton0.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour0',$('.hour0').val());
+    location.reload();
+    
 })
 saveButton1.click(function() {
     saveButton1.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour1',$('.hour1').val());
+    location.reload();
 })
 saveButton2.click(function() {
     saveButton2.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour2',$('.hour2').val());
+    location.reload();
 })
 saveButton3.click(function() {
     saveButton3.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour3',$('.hour3').val());
+    location.reload();
 })
 saveButton4.click(function() {
     saveButton4.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour4',$('.hour4').val());
+    location.reload();
 })
 saveButton5.click(function() {
     saveButton5.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour5',$('.hour5').val());
+    location.reload();
 })
 saveButton6.click(function() {
     saveButton6.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour6',$('.hour6').val());
+    location.reload();
 })
 saveButton7.click(function() {
     saveButton7.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour7',$('.hour7').val());
+    location.reload();
 })
 saveButton8.click(function() {
     saveButton8.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour8',$('.hour8').val());
+    location.reload();
 })
 saveButton9.click(function() {
     saveButton9.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour9',$('.hour9').val());
+    location.reload();
 })
 saveButton10.click(function() {
     saveButton10.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour10',$('.hour10').val());
+    location.reload();
 })
 saveButton11.click(function() {
     saveButton11.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour11',$('.hour11').val());
+    location.reload();
 })
 saveButton12.click(function() {
     saveButton12.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour12',$('.hour12').val());
+    location.reload();
 })
 saveButton13.click(function() {
     saveButton13.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour13',$('.hour13').val());
+    location.reload();
 })
 saveButton14.click(function() {
     saveButton14.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour14',$('.hour14').val());
+    location.reload();
 })
 saveButton15.click(function() {
     saveButton15.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour15',$('.hour15').val());
+    location.reload();
 })
 saveButton16.click(function() {
     saveButton16.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour16',$('.hour16').val());
+    location.reload();
 })
 saveButton17.click(function() {
     saveButton17.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour17',$('.hour17').val());
+    location.reload();
 })
 saveButton18.click(function() {
     saveButton18.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour18',$('.hour18').val());
+    location.reload();
 })
 saveButton19.click(function() {
     saveButton19.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour19',$('.hour19').val());
+    location.reload();
 })
 saveButton20.click(function() {
     saveButton20.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour20',$('.hour20').val());
+    location.reload();
 })
 saveButton21.click(function() {
     saveButton21.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour21',$('.hour21').val());
+    location.reload();
 })
 saveButton22.click(function() {
     saveButton22.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour22',$('.hour22').val());
+    location.reload();
 })
 saveButton23.click(function() {
     saveButton23.fadeOut('slow').fadeIn(10);
     localStorage.setItem('hour23',$('.hour23').val());
+    location.reload();
 })
 
 
