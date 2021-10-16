@@ -77,8 +77,9 @@ textarea {
   background-color: var(--greengrey);
   border-top:var(--mediumgrey) ;
   border-width: 2px solid var(--mediumgrey);
-  color: white;
+  color: var(--mediumgrey);
   text-decoration: line-through;
+  font-size: 16px;
 }
 
 .present {
@@ -90,6 +91,7 @@ textarea {
   padding-top: 10px;
   border-top: white ;
   border-width: 2px solid white;
+  font-size: 25px;
 }
 
 .future {
@@ -101,6 +103,7 @@ textarea {
   padding-top: 10px;
   border-top: white ;
   border-width: 2px solid white;
+  font-size: 16px;
 }
 
 /* .appt {
