@@ -7,8 +7,11 @@ This is a day planner for single day use.
 User can input appointments into the text boxes located in each hour row.
 
 Planner UI reflects the time of day.
+  
   -Past hours will display appts in #b5c4c5 with a font size of 18px and a striokethrough indicating that that appt time slot has passed. The background of the rows row will be color of the rows will be #b5c4c5
+  
   -Present hour will display appts in White font with a font size of 25px. The background color of the row will be #877e85
+  
   -Future hours will display appts in White font with a font size of 18px. The background color of the rows will be #724f67
   
  User will be able to save appt data. Once data is saved website can be refreshed and saved data is automatically reloaded. 
